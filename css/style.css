@@ -1,0 +1,39 @@
+#loader {
+    position: fixed;
+    background: #050120;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-family: "Arial Black", sans-serif;
+    font-size: 40px;
+    opacity: 1;
+}
+#loader span {
+    display: inline-block;
+    -webkit-animation: pulse 0.4s alternate infinite ease-in-out;
+    animation: pulse 0.4s alternate infinite ease-in-out;
+    font-family: "Arial Black", sans-serif;
+    font-size: 60px;
+}
+#loader span:nth-child(odd) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+@-webkit-keyframes pulse {
+    to {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
+@keyframes pulse {
+    to {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
